@@ -1,0 +1,46 @@
+# Criando o cardápio
+
+cardapio = ["Toscana","Napolitana","Frango com Catupiry","Marguerita"]
+
+# Colocando o título
+print(f"-"*50)
+print(f"Obrigado por escolher a nossa pizzaria!")
+print(f"-"*50)
+print(f"\n")
+
+# Usando o comando input() para coletar o nome
+print(f"-"*50)
+nome = input("Qual seu nome? ")
+print(f"-"*50)
+# Imprimindo o cardápio com o comando for
+print(f"Perfeito {nome}, hoje temos disponível os seguintes sabores:\n")
+print(f"-"*50)
+print(f"Toscana por 42,0 reais")
+print(f"-"*50)
+print(f"Napolitana por 40,0 reais")
+print(f"-"*50)
+print(f"Frango com Catupiry por 38,0 reais")
+print(f"-"*50)
+print(f"Marguerita por 36,0 reais")
+print(f"-"*50)
+# Usando o comando input() para coletar o pedido
+pedido = input(f"Qual o seu pedido? Resposta:  ")
+print(f"-"*50)
+# Caso o pedido não esteja disponível no Menu
+if pedido not in cardapio:
+  input(f"{nome}, infelizmente não temos esse sabor hoje. Por favor, escolha um sabor do cardápio. Resposta: ") 
+print(f"-"*50)
+# Caso o pedido esteja disponível no menu
+if pedido in cardapio:
+  if pedido == "Toscana":
+    input(f"Obrigada {nome}, o valor total do seu pedido é de: R$ 42,00\nQual a forma de pagamento?  ")
+
+  elif pedido == "Napolitana":
+      input(f"Obrigada {nome}, o valor total do seu pedido é de: R$ 40,00\nQual a forma de pagamento?  ")
+
+  elif pedido == "Frango com Catupiry":
+      input(f"Obrigada {nome}, o valor total do seu pedido é de: R$ 38,00\nQual a forma de pagamento?  ")
+
+  elif pedido == "Marguerita":
+      input(f"Obrigada {nome}, o valor total do seu pedido é de: R$ 36,00\nQual a forma de pagamento?  ")
+    
